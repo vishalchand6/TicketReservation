@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Reservation Form</h1><hr>
+        <h3>* Denotes Mandatory</h3>
+        <form onsubmit="return onSubmit()">
+            <lable for="fName">Full Name*</lable><br>
+            <input type="text" id="fName" name="fName" required><br><br>
+            <lable for="email">Email Address*</lable><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <lable for="destination">Select Destination*</lable><br>
+            <select id="destination" name="destination" required>
+                <option value="" disabled selected>Choose an Option</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+            </select><br><br>
+            <lable for="date">Arrival Date*</lable><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="noOfPersons">Number of Persons*</label><br>
+            <input type="number" id="noOfPersons" name="noOfPersons" required><br><br>
+            <lable>What would you want to avail?*</lable><br>
+            <input type="checkbox" id="boarding" name="boarding" value="Boarding">
+            <lable for="boarding">Boarding</lable><br>
+            <input type="checkbox" id="fooding" name="fooding" value="Fooding">
+            <label for="fooding">Fooding</label><br>
+            <input type="checkbox" id="sightSeeing" name="sightSeeing" value="Sight Seeing">
+            <lable for="sightSeeing">Sight Seeing</lable><br><br>
+            <lable for="coupen">Discount Coupen Code</lable><br>
+            <input type="text" id="coupen" name="coupen"><br><br>
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </div>
+
+    <script>
+        function onSubmit() {
+            alert("Submitted")
+        }
+    </script>
+</body>
+</html>
