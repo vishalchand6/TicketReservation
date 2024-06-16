@@ -41,7 +41,17 @@
 
     <script>
         function onSubmit() {
-            alert("Submitted")
+            var coupenCode = document.getElementById("coupen").value
+            if (coupenCode.toLowerCase() == "shruthivishal") {
+                alert("Congratulation Shruthi M V, you won 100% discount(only for my lovable Shruthi M V)")
+                alert("Submitted")
+            }
+
+            else {
+                alert("No Coupen Applied")
+                alert("Submitted")
+            }
+            
         }
     </script>
 </body>
